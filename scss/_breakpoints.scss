@@ -1,0 +1,19 @@
+@media (max-width: $layout-breakpoint-small) {
+  .header-wrapper{
+    display:none
+  }
+
+  .header-section{
+    display: block;
+    // height: 100vh;
+    background-color: black;
+  }
+
+  .mob--nav__sub {
+    margin: auto 0;
+    display: block !important;
+    cursor: pointer;
+    color: white;
+
+  }
+}

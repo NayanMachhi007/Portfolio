@@ -1,0 +1,42 @@
+// Import SCSS
+@import "_var";
+@import "_global";
+@import "_phone";
+@import "_ipad";
+@import "_desktop";
+@import "_large_screen";
+@import "_nav";
+@import "_breakpoints";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  font-family: Helvetica Neue;
+}
+
+body {
+  color: $manatee;
+   font-family: Helvetica Neue;
+  background: #252734;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}

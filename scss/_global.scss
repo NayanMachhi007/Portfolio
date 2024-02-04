@@ -1,0 +1,52 @@
+@mixin h3__primary__heading {
+  font-size: 6rem;
+  letter-spacing: 0;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+}
+
+@mixin h4__primary__heading {
+  font-size: 9rem;
+}
+
+@mixin primary__a {
+  font-size: 18px;
+  line-height: 120px;
+  display: inline-block;
+  color: #858792;
+  position: relative;
+}
+
+@mixin primary__sub__a {
+  font-size: 18px;
+  display: inline-block;
+  color: #858792;
+  position: relative;
+}
+
+.primary__a {
+  @include primary__a;
+}
+
+.primary__sub__a {
+  @include primary__sub__a;
+}
+
+.h3__primary__heading {
+  @include h3__primary__heading;
+}
+
+.h4__primary__heading {
+  @include h4__primary__heading;
+}
+
+// Padding
+
+@mixin pt-40 {
+  padding-top: 4rem;
+}
+
+.pt-40{
+  @include pt-40;
+}
