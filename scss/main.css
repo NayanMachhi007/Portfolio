@@ -14,7 +14,7 @@
 }
 
 .h3__primary__heading {
-  font-size: 6rem;
+  font-size: 2rem;
   letter-spacing: 0;
   font-weight: 700;
   line-height: 1;
@@ -23,6 +23,12 @@
 
 .h4__primary__heading {
   font-size: 9rem;
+}
+
+.simple__para {
+  font-size: 2.3rem;
+  line-height: 2rem;
+  color: #858792;
 }
 
 .pt-40 {
@@ -139,6 +145,36 @@
     color: white;
   }
 }
+.accordion-section {
+  border: 1px solid black;
+}
+.accordion-section .accordion__iteam .accordion_label {
+  position: relative;
+  padding: 1rem;
+  background-color: #896c4c;
+  color: black;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  transition: all 0.6s ease;
+}
+.accordion-section .accordion__iteam .accordion_label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  font-size: 1rem;
+}
+.accordion-section .accordion__iteam.active .accordion_label::before {
+  content: "-";
+}
+.accordion-section .accordion__iteam .accordion__content {
+  border: 1px solid wheat;
+}
+.accordion-section .accordion__iteam.active .accordion__content {
+  display: block;
+}
+
 * {
   margin: 0;
   padding: 0;

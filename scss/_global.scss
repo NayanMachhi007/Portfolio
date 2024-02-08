@@ -1,5 +1,5 @@
 @mixin h3__primary__heading {
-  font-size: 6rem;
+  font-size: 2rem;
   letter-spacing: 0;
   font-weight: 700;
   line-height: 1;
@@ -25,6 +25,12 @@
   position: relative;
 }
 
+@mixin simple__para {
+  font-size: 2.3rem;
+  line-height:2rem;
+  color: #858792;
+}
+
 .primary__a {
   @include primary__a;
 }
@@ -41,12 +47,15 @@
   @include h4__primary__heading;
 }
 
+.simple__para {
+  @include simple__para;
+}
 // Padding
 
 @mixin pt-40 {
   padding-top: 4rem;
 }
 
-.pt-40{
+.pt-40 {
   @include pt-40;
 }
